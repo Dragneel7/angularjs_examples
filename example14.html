@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</body>
+<div ng-app="myApp" ng-controller="myCtrl">
+	<button ng-click="sum=sum+1">click me</button>
+	<p>{{sum}}</p>
+</div>
+<script >
+angular.module('myApp',[]).controller('myCtrl',function($scope){
+	$scope.sum=0;
+	/*$scope.sum=function(){
+		return $scope.sum+1;
+	}*/
+});
+</script>
+</html>
