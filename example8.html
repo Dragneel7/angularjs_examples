@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<div ng-app="myApp" ng-controller="myCtrl">
+	Name:<input type="text" ng-model="name">
+</div>
+<script>
+	var app= angular.module('myApp',[]);
+	app.controller('myCtrl',function($scope){
+			$scope.name="surya saini";
+	});
+</script>
+<!-- using ng- model and scope to bind the value to input-->
+</body>
+</html>

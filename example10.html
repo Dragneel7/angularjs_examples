@@ -1,0 +1,23 @@
+<!-- using models to set css values -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input.ng-invalid{
+			background-color: lightblue;
+		}
+		input.ng-valid{
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script><form ng-app="" name="myForm">
+    Enter your name:
+    <input name="myName" ng-model="myText" required>
+
+</form>
+</body>
+</html>
